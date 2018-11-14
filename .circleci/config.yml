@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: coqorg/coq:8.8
     steps:
       - checkout
-      - run: exit 1
+      - run: coqc --version
