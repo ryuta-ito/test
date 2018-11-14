@@ -2,8 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: coqorg/coq:8.8
+      - image: alpine/git:latest
     steps:
       - checkout
       - setup_remote_docker
-      - run: docker run coqorg/coq:8.8 coqc --version
+      - run: docker run --rm alpine/git --version
