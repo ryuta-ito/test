@@ -5,4 +5,5 @@ jobs:
       - image: coqorg/coq:8.8
     steps:
       - checkout
+      - setup_remote_docker
       - run: docker run coqorg/coq:8.8 coqc --version
