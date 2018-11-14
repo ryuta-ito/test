@@ -5,4 +5,4 @@ jobs:
       - image: coqorg/coq:8.8
     steps:
       - checkout
-      - run: coqc --version
+      - run: docker run coqorg/coq:8.8 coqc --version
