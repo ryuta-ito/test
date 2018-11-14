@@ -3,11 +3,12 @@ jobs:
   build:
     # machine: true
     docker:
-      - image: circleci/golang:1.11
+      - image: coqorg/coq:8.8
     steps:
       - checkout
       # - setup_remote_docker:
       - run:
           command: |
+            PATH=/home/coq/.opam/4.05.0/bin/:$PATH
             whoami
-            go version
+            coqc --version
