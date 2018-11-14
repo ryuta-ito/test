@@ -6,4 +6,5 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - run: docker run --rm alpine/git --version
+      - run:
+        command: git --version
