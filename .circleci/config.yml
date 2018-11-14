@@ -1,6 +1,7 @@
 version: 2
 jobs:
   build:
+    machine: true
     # docker:
     #   - image: coqorg/coq:8.8
     steps:
