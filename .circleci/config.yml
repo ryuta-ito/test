@@ -1,9 +1,9 @@
 version: 2
 jobs:
   build:
-    machine: true
-    # docker:
-    #   - image: coqorg/coq:8.8
+    # machine: true
+    docker:
+      - image: circleci/golang:1.11
     steps:
       - checkout
       # - setup_remote_docker:
